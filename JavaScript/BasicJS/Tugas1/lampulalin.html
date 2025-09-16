@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampu Lalulintas</title>
+</head>
+<body>
+    <script>
+        let warna = prompt("Masukkan warna lampu (Merah, Kuning, Hijau):").toLowerCase(); // Merah, mErah, MERAH, MERAh --> merah <> toUpperCase() --> mengubah semua huruf menjadi huruf besar
+        let pesan = "";
+
+        if (warna === "merah") { // diuji data dan tipe datanya
+            pesan = "berhenti";
+        } else if (warna === "kuning") {
+            pesan = "berhati-hati";
+        } else if (warna === "hijau") {
+            pesan = " berjalan";
+        } else {
+            pesan = "menepi ke pinggir jalan.";
+        }
+
+        document.write("<h2>Anda sedang melihat lampu "+ warna + ", sebaiknya kendaraan Anda " + pesan + "</h2>");
+    </script>
+</body>
+</html>
